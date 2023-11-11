@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgb(53, 35, 35);
+  color: aliceblue;
+}
+/*------------------------------------------------------------primary-------------------------------------------------------------------*/
+.prim-links img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.prim-links {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.primary {
+  background-color:burlywood;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  border-radius: 15px;
+  height: 97vh;
+  flex: 1;
+  margin: 10px;
+  border: solid 2px black;  
+}
+
+.home,
+.personal,
+.portfolio,
+.blog,
+.home-contact {
+  padding: 10px;
+}
+
+.prim-img {
+  transition: transform 0.3s;
+}
+
+.prim-links:hover .prim-img {
+  transform: scale(1.5);
+}
+/*------------------------------------------------------------secondary-------------------------------------------------------------------*/
+.secondary {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  border-radius: 20px;
+  max-height: 95vh;
+  flex: 20;
+}
+.name {
+  font-size: 4.4rem;
+  word-spacing: 15px;
+  letter-spacing: 7px;
+  line-height: 50px;
+}
+.name-info {
+  font-size: 3.5rem;
+  word-spacing: 15px;
+  letter-spacing: 6px;
+  line-height: 5px;
+}
+.my-img {
+  border-radius: 150px;
+}
+.my-photo {
+  border-radius: 150px;
+  max-height: 370px;
+  max-width: 3600px;
+}
+
+/*------------------------------------------------------------tertiary-------------------------------------------------------------------*/
+.tertiary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  height: 100vh;
+  flex: 1;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  
+  
+}
+
+.tertiary-img {
+  max-height: 40px;
+  max-width: 40px;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  padding: 10px;
+}
+.img-btn {
+  height: 47vh;
+  width: 100%;
+  border-radius: 15px;
+  background-color: burlywood;
+  border: 2px solid black;
+}
+.img-btn:hover .tertiary-img {
+  transform: scale(1.40);
+}
+.img-btn:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------contact--------------------------------------------------------*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 20;
+  align-self: center;
+  align-items: center;
+}
+.contact-heading {
+  text-align: center;
+}
+.contact-heading h1 {
+  font-size: 3.4rem;
+}
+
+.contact-content #e-mail {
+  width: 600px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  border: 2px solid black;
+}
+.contact-content p {
+  font-size: 1.1rem;
+}
+
+.contact-content #message {
+  width: 600px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 7px;
+  resize: vertical;
+  min-height: 100px;
+  font-size: 1rem;
+ 
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content button {
+  width: 40%;
+  font-size: 1rem;
+  align-self: center;
+  margin-top: 20px;
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  transition: transform 0.4s;
+  border-radius: 10px;
+}
+.contact-content button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+textarea:placeholder-shown{
+  font-style: italic;
+}
+input:placeholder-shown{
+  font-style: italic;
+}
