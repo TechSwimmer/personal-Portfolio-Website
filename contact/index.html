@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <div class="theme-toggle">
+        <button id="themeToggle">
+            <img class="light-icon toggle-display" src="../images/download.jfif" alt="light">
+            <div class="light-text">Light</div>
+            
+            <img class="dark-icon" src="../images/stock-photo-simple-flat-moon-icon-silent-sleepmode-mobile-icon-stock-vector-illustration-isolated-on-white-background-1901704.jpg" alt="dark">
+            <div class="dark-text">Dark</div>
+        </button>
+    </div>
 
     <div class="primary">
         <div class="home">
@@ -36,6 +45,10 @@
 
         <form action="backedn.php" method="post">
             <div class="contact-content">
+                <label for="name">
+                    <p>Your Name</p>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </label>
 
                 <label for="e-mail">
                     <p>Your Email</p>

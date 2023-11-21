@@ -6,8 +6,9 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
-  background-color: rgb(53, 35, 35);
-  color: aliceblue;
+  background-color:rgb(53, 35, 35);
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 /*------------------------------------------------------------primary-------------------------------------------------------------------*/
 .prim-links img {
@@ -20,7 +21,7 @@ body {
 }
 
 .primary {
-  background-color:burlywood;
+  background-color:wheat;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -28,10 +29,11 @@ body {
   top: 5px;
   left: 5px;
   border-radius: 15px;
-  height: 97vh;
+  height: 96vh;
   flex: 1;
-  margin: 10px;
+  margin: 15px;
   border: solid 2px black;  
+  
 }
 
 .home,
@@ -93,7 +95,7 @@ body {
   position: fixed;
   top: 5px;
   right: 5px;
-  
+  background-color: ;
   
 }
 
@@ -108,8 +110,9 @@ body {
   height: 47vh;
   width: 100%;
   border-radius: 15px;
-  background-color: burlywood;
+  background-color:wheat;
   border: 2px solid black;
+  color: aliceblue;
 }
 .img-btn:hover .tertiary-img {
   transform: scale(1.40);
@@ -157,6 +160,14 @@ body {
   font-size: 1rem;
  
 }
+.contact-content #name{
+  width: 600px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  border: 2px solid black;
+}
 
 .contact-content {
   display: flex;
@@ -183,4 +194,71 @@ textarea:placeholder-shown{
 }
 input:placeholder-shown{
   font-style: italic;
+}
+
+/*----------------------------------------------theme--------------------------------------------------------*/
+
+.theme-toggle{
+  background-color: white;
+  display: block;
+  border: 2px solid black;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  border-radius: 20px;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+  justify-content: space-between;
+}
+
+.light-icon, .dark-icon{
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 4px;
+}
+
+
+
+
+#themeToggle{
+  border-radius: 20px;
+  transition: width 0.3s ease;
+  border: white;
+  
+}
+
+
+#themeToggle:hover{
+  cursor: pointer;
+}
+
+.dark-text , .light-text{
+  position: absolute;
+  top: 60px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  text-align: right;
+  font-size: large;
+  color: black;
+}
+
+.theme-toggle:hover , .light-text .dark-text{
+  color: black;
+  opacity: 1;
+}
+
+
+.light-theme{
+  background-color: antiquewhite;
+  color: black;
+}
+.dark-theme{
+  background-color: black;
+  color: white;
+}
+
+
+.toggle-display{
+  display: none;
 }

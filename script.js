@@ -1,32 +1,21 @@
-function twiceAsOld(dadAge, sonAge) {
-  let answer = 0;
-  let modDadAge = dadAge;
-  let modSonAge = sonAge;
-  if (dadAge / 2 === sonAge) {
-    return 0;
-  } else {
-    for (let i = 0; i < dadAge; i++) {
-      modDadAge++;
-      modSonAge++;
-      answer++;
-      if (modDadAge / 2 === modSonAge) {
-        return answer;
-      } else {
-        let answer = 0;
-        for (let i = 0; i < dadAge; i++) {
-          dadAge--;
-          sonAge--;
-          answer++;
-          if (dadAge / 2 === sonAge) {
-            return answer;
-          }
-        }
-      }
-    }
-  }
+//light-dark mode toggle effect----------------------------------------------------------------------------------------------
+
+// select elements whose behaviour has to be changed store them in variables
+
+const themeToggle = document.querySelector('#themeToggle');
+
+const lightImage = document.querySelector('.light-icon');
+const darkImage = document.querySelector('.dark-icon');
+console.log(darkImage);
+
+themeToggle.addEventListener('click', function() {
+    lightImage.classList.toggle('toggle-display');
+    darkImage.classList.toggle('toggle-display');
+})
+
+
+// applying the selected theme from above to the entire page
+
+function themeSelect(){
+    
 }
-
-
-
-
-console.log(twiceAsOld(29,0));
